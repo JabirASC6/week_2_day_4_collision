@@ -32,7 +32,7 @@ function setup(){
 
     //load image
     spiderman = loadImage("togepi.png")
-    venom = loadImage("cefairy.png")
+    venom = loadImage("clefairy.png")
     backdrop = loadImage("Energetic_Forest.png")
 }
 
