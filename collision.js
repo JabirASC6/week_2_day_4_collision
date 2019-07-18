@@ -2,6 +2,8 @@
 let myPosX = 25
 let myPosY = 25
 let mySpeed = 5
+let width = 50
+let height = 50
 
 let enemyX, enemyY;
 let enemyW = 50, enemyH = 50
@@ -11,16 +13,17 @@ let enemyLeft, enemyRight, enemyTop,enemyBottom
 
 let points = 0
 
-let clefairy
-
-let togepi
+let spiderman;
+let venom;
+let backdrop;
 
 function setup(){
     createCanvas(500,500)
     background(0)
 
     //switch rectMode
-    rectMode(CENTER);
+    
+    imageMode(CENTER);
 
     enemyX = random(25,475)
     enemyY = random(75, 475)
@@ -28,20 +31,21 @@ function setup(){
     textSize(15)
 
     //load image
-    spiderman = loadImage("spider_man_PNG97.png")
-    venom = loadImage("venom_png_1458518.png")
+    spiderman = loadImage("togepi.png")
+    venom = loadImage("cefairy.png")
+    backdrop = loadImage("Energetic_Forest.png")
 }
 
 function draw(){
     background(0)
-
+    image(backdrop, width /2 ,height /2, height)
     // fill(255,0,0)
     // rect(enemyX,enemyY,enemyW,enemyH)
     // fill(0,0,255)
     // rect(myPosX,myPosY,50,50)
 
     //draw pokemon
-    image(togepi,enemyX, enemyY, enemyW, enemyH)
+    image(venom,enemyX, enemyY, enemyW, enemyH)
 
     //draw spiderman
     image(spiderman,myPosX,myPosY,50,50)
