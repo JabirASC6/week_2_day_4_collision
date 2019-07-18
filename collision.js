@@ -38,7 +38,7 @@ function setup(){
 
 function draw(){
     background(0)
-    image(backdrop, width /2 ,height /2, height)
+    image(backdrop, width  ,height , )
     // fill(255,0,0)
     // rect(enemyX,enemyY,enemyW,enemyH)
     // fill(0,0,255)
