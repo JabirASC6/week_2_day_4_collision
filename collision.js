@@ -31,24 +31,24 @@ function setup(){
     textSize(15)
 
     //load image
-    spiderman = loadImage("togepi.png")
-    venom = loadImage("clefairy.png")
+    togepi = loadImage("togepi.png")
+    clefairy = loadImage("clefairy.png")
     backdrop = loadImage("Energetic_Forest.png")
 }
 
 function draw(){
     background(0)
-    image(backdrop, width  ,height , )
+    image(backdrop, width  ,height )
     // fill(255,0,0)
     // rect(enemyX,enemyY,enemyW,enemyH)
     // fill(0,0,255)
     // rect(myPosX,myPosY,50,50)
 
     //draw pokemon
-    image(venom,enemyX, enemyY, enemyW, enemyH)
+    image(togepi,enemyX, enemyY, enemyW, enemyH)
 
     //draw spiderman
-    image(spiderman,myPosX,myPosY,50,50)
+    image(clefairy,myPosX,myPosY,50,50)
     
     //if left arrow is pressed
     if (keyIsDown(LEFT_ARROW)){
